@@ -1,0 +1,114 @@
+/* GENERAL PAGE STYLING */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background: #c5c5c5;
+}
+/* FORM CONTAINER */
+h2 {
+    text-align: center;
+    color: gold;
+    margin-top: 0;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+form {
+    width: 450px;
+    margin: 35px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+}
+
+/* LABELS */
+form label {
+    font-weight: 600;
+    color: midnightblue;
+    font-size: 14.5px;
+}
+
+/* INPUT FIELDS */
+form input[type="text"],
+form input[type="date"],
+form input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: #f4f5ff;
+    border: 1px solid #d8d9ed;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #0A1D56;
+    box-shadow: 0px 0px 4px rgba(10, 29, 86, 0.3);
+}
+
+/* SUBMIT BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background: #0A1D56;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #112b85;
+    transform: translateY(-2px);
+}
+a.btn-secondary {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background: #5c5f5f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+a.btn-secondary:hover {
+    background: rgb(163, 161, 161);
+}
+
+.search-box {
+  padding-right: 150px;
+}
+.search-box input {
+    padding: 6px;
+    width: 220px;
+}
+
+/* NAVBAR (IF YOU WANT SAME STYLE AS IMAGE) */
+.navbar {
+    width: 100%;
+    background: #0A1D56;
+    padding: 15px 40px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+}

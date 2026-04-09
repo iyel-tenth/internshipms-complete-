@@ -1,0 +1,119 @@
+
+
+
+body{
+    background: url("img/bgcov.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*
+{
+  padding: 0;
+  margin: 0;
+}
+ 
+nav
+{
+  position: fixed;
+  background-color: midnightblue;
+  height: 70px;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+
+.logo
+{
+  font-size: 25px;
+  position: relative;
+  left: 5%;
+  color: white;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+ul 
+{
+  position: relative;
+  float: right;
+  margin-right: 20px;
+}
+
+ul li 
+{
+  display: none;
+  line-height: 70px;
+  margin: 0 5px;
+}
+
+ul li a 
+{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+ul li a:hover
+{
+  color: #88BDF2;
+}
+
+
+.home .row .content h5{
+  color: black;
+  font-size: 4rem;
+  text-align: left;
+  padding-top: 30vh;
+  padding-left: 10rem;
+}
+
+.home .row .content span{
+  color: midnightblue;
+  font-size: 4rem;
+  text-align: left;
+}
+
+.home .row .content .btn{
+  background-color: midnightblue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 3rem;
+  margin-bottom: 10rem;
+}
+
+button {
+  background: midnightblue;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10rem;
+  padding: 10px 30px ;
+  float: left;
+}
+
+button:hover {
+  opacity: .7;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between logo and text */
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+nav .logo img {
+  height: 40px; /* adjust size */
+  width: auto;
+  border-radius: 5px; /* optional */
+}

@@ -1,0 +1,61 @@
+
+    /* =========================
+       TOP CONTROL LAYOUT
+    ========================= */
+    .top-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* BUTTON STYLE */
+    .action-buttons button,
+    .btn-add {
+        padding: 10px 18px;
+        border: none;
+        background: #0A1D56;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .action-buttons button:hover,
+    .btn-add:hover {
+        background: #112b85;
+        transform: translateY(-2px);
+    }
+
+    /* SELECTED ROW */
+    .selected-row {
+        background-color: #d6e4ff !important;
+    }
+
+    .action-column {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    }
+
+    .step-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .step-btn i {
+        font-size: 14px;
+    }

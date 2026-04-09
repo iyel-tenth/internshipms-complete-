@@ -1,0 +1,127 @@
+/* =========================
+   GENERAL PAGE STYLING
+========================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background: #c5c5c5;
+}
+
+/* =========================
+   FORM TITLE
+========================= */
+h2 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+form {
+    width: 450px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   LABELS
+========================= */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: midnightblue;
+    font-size: 14.5px;
+}
+
+/* =========================
+   INPUTS & TEXTAREA
+========================= */
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    background: #f4f5ff;
+    border: 1px solid #d8d9ed;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* FILE INPUT CLEAN LOOK */
+form input[type="file"] {
+    background: #ffffff;
+    padding: 9px;
+}
+
+/* =========================
+   FOCUS EFFECT
+========================= */
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #0A1D56;
+    box-shadow: 0px 0px 4px rgba(10, 29, 86, 0.3);
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 22px;
+    border: none;
+    background: #0A1D56;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #112b85;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CANCEL BUTTON
+========================= */
+a.btn-secondary {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 12px;
+    background: #5c5f5f;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+a.btn-secondary:hover {
+    background: rgb(163, 161, 161);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+}

@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background: #c5c5c5;
+}
+
+/* CENTER WRAPPER */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* CARD DESIGN */
+.card-container {
+    width: 60%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* TITLE */
+.card-container h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: midnightblue;
+}
+
+/* DESCRIPTION TEXT */
+.card-container .text {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* OTP INPUT */
+.card-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.card-container input[type="text"]:focus {
+    border-color: midnightblue;
+}
+
+/* VERIFY BUTTON */
+.card-container input[type="submit"] {
+    background: midnightblue;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card-container input[type="submit"]:hover {
+    background: #0c0f54;
+}
+
+/* SUCCESS MESSAGE */
+.card-container p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.card-container a {
+    color: midnightblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-container a:hover {
+    text-decoration: underline;
+}
+
+nav
+{
+position: fixed;
+background-color: midnightblue;
+height: 70px;
+width: 100%;
+z-index: 1;
+top: 0;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 992px) {
+    .card-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        width: 95%;
+        padding: 25px;
+    }
+}

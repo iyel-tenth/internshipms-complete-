@@ -1,0 +1,145 @@
+/* ===== GENERAL PAGE STYLING ===== */
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background-color: #f5f7fb;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+  margin: 0;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+p{
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* ===== ATTENDANCE TABLE ===== */
+table {
+    width: calc(100% - 40px);
+    margin: 20px;
+    border-collapse: collapse;
+    table-layout: fixed; /* forces equal column widths */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: -30px;
+}
+
+/* Header */
+thead th {
+    background-color: #0C5DF4;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    height: 45px;
+    border: 1px solid #0b4fd1;
+}
+
+/* Body cells */
+tbody td {
+    border: 1px solid #ddd;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 14px;
+}
+
+thead th:first-child,
+tbody td:first-child {
+    width: 200px;       /* wide enough for names */
+    min-width: 220px;   /* prevents it from shrinking */
+    max-width: 300px;   /* optional max */
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 600;
+    background-color: #0C5DF4; /* light background */
+    box-sizing: border-box;    /* include padding in width */
+}
+
+
+tbody td:last-child {
+    background-color: #eef3ff;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+/* ===== INPUT FIELDS ===== */
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+}
+
+/* Remove number arrows (standards + compatibility) */
+input[type=number] {
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hover effect */
+tbody td:hover {
+    background-color: #f0f4ff;
+}
+
+/* Read-only total */
+input[readonly] {
+    font-weight: bold;
+    color: #0C5DF4;
+}
+
+/* ===== SAVE BUTTON ===== */
+button {
+    margin: 10px 20px 30px;
+    padding: 10px 22px;
+    background-color: #0C5DF4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(12, 93, 244, 0.3);
+}
+
+button:hover {
+    background-color: #0949c7;
+}
+
+.main-content {
+    margin-left: 250px;  /* match your sidebar width */
+    padding: 20px;
+}
+
+/* Optional: make table scrollable if too wide */
+.table-container {
+    overflow-x: auto;
+    margin-right: -70px ;
+}
+
+
+/* ===== RESPONSIVE (SMALL SCREENS) ===== */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    thead th {
+        font-size: 12px;
+    }
+}

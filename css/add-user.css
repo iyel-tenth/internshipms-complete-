@@ -1,0 +1,109 @@
+/* ===== GENERAL PAGE STYLING ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background: #c5c5c5;
+}
+
+
+/* ===== FORM TITLE ===== */
+h2 {
+    text-align: center;
+    color:gold;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* ===== FORM CONTAINER ===== */
+form {
+    width: 500px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== LABELS ===== */
+form label {
+    display: block;
+    font-weight: 600;
+    color:midnightblue;
+    margin-bottom: 6px;
+    font-size: 14.5px;
+}
+
+/* ===== INPUT FIELDS ===== */
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid #ccd1d9;
+    background: #f9fafb;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+}
+
+/* ===== SUBMIT BUTTON ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: midnightblue ;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0C5DF4;
+    transform: translateY(-2px);
+}
+a.btn-secondary {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background: #5c5f5f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+a.btn-secondary:hover {
+    background: rgb(163, 161, 161);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+}
